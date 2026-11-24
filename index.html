@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina do Jardim — Paisagismo e Manutenção de Jardins</title>
+  <meta name="description" content="Poda, capina e recuperação de gramados com o cuidado que sua planta merece.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-clara sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo Oficina do Jardim">
+        Oficina do Jardim
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#empresa">Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="btn btn-primary btn-sm ms-lg-2" href="index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge bg-tint text-verde-escuro mb-3 px-3 py-2">Paisagismo & Manutenção de Jardins</span>
+          <h1 class="fw-bold text-verde-escuro display-5">Aqui sua grama é tratada melhor do que você.</h1>
+          <p class="fs-5 text-muted mt-3">Poda cirúrgica, capina pesada e recuperação de gramados feitas por quem trata cada folha com obsessão.</p>
+          <div class="d-flex gap-3 mt-4 flex-wrap">
+            <a href="#servicos" class="btn btn-primary btn-lg px-4">Ver Serviços</a>
+            <a href="https://wa.me/5549988425298?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento" target="_blank" class="btn btn-outline-primary btn-lg px-4">
+              <i class="bi bi-whatsapp"></i> Falar agora
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative">
+          <img src="img/servico3.jpg" class="img-fluid imagem-hero shadow" alt="Jardim florido e gramado saudável">
+          <div class="badge-flutuante d-none d-md-block">
+            <div class="fw-bold fs-4">+120</div>
+            <div class="small">jardins recuperados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-verde-escuro-2 py-5">
+    <div class="container">
+      <h2 class="text-center text-white fw-bold mb-4">Destaques e Promoções</h2>
+      <div id="carrosselPromo" class="carousel slide carrossel-promo" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-promo" style="background-image:url('img/carrossel2.jpg');">
+              <div class="conteudo-promo">
+                <h4 class="fw-bold">Poda Sculpting</h4>
+                <p class="mb-2">Arbustos e cercas vivas esculpidos com precisão cirúrgica.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-promo" style="background-image:url('img/carrossel3.jpg');">
+              <div class="conteudo-promo">
+                <h4 class="fw-bold">Promoção: Capina Cirúrgica</h4>
+                <p class="mb-2">Condições especiais este mês para nivelamento de terrenos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-promo" style="background-image:url('img/carrossel1.jpg');">
+              <div class="conteudo-promo">
+                <h4 class="fw-bold">UTI do Gramado</h4>
+                <p class="mb-2">Recupere a densidade e o verde vibrante em até 2 semanas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPromo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselPromo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="container py-5">
+    <h2 class="text-center text-verde-escuro fw-bold mb-2">Nossos Serviços</h2>
+    <p class="text-center text-muted mb-5">Cuidado vegetal rigoroso, do canteiro à raiz.</p>
+
+    <div id="lista-servicos">
+      <div class="linha-servico row align-items-center g-4 mb-5" data-servico-id="1">
+        <div class="col-lg-2 d-none d-lg-block text-center">
+          <span class="numero-servico">01</span>
+        </div>
+        <div class="col-lg-5">
+          <img src="img/servico1.jpg" class="img-fluid shadow-sm" alt="Poda Sculpting e Estética Ornamental">
+        </div>
+        <div class="col-lg-5">
+          <h4 class="text-verde-escuro">Poda Sculpting e Estética Ornamental</h4>
+          <p class="text-muted">Desenho, alinhamento e manutenção de arbustos e cercas vivas com cortes de precisão que garantem formatos geométricos perfeitos.</p>
+          <p class="fs-4 fw-bold text-verde-escuro">R$ 350,00</p>
+          <a href="servico1.html" class="btn btn-primary">Solicitar Orçamento</a>
+        </div>
+      </div>
+
+      <div class="linha-servico row align-items-center g-4 mb-5 flex-lg-row-reverse" data-servico-id="2">
+        <div class="col-lg-2 d-none d-lg-block text-center">
+          <span class="numero-servico">02</span>
+        </div>
+        <div class="col-lg-5">
+          <img src="img/servico2.jpg" class="img-fluid shadow-sm" alt="Capina Cirúrgica e Nivelamento de Terrenos">
+        </div>
+        <div class="col-lg-5">
+          <h4 class="text-verde-escuro">Capina Cirúrgica e Nivelamento</h4>
+          <p class="text-muted">Erradicação de ervas daninhas, nivelamento do terreno e preparo do solo para novos plantios.</p>
+          <p class="fs-4 fw-bold text-verde-escuro">R$ 480,00</p>
+          <a href="servico2.html" class="btn btn-primary">Solicitar Orçamento</a>
+        </div>
+      </div>
+
+      <div class="linha-servico row align-items-center g-4" data-servico-id="3">
+        <div class="col-lg-2 d-none d-lg-block text-center">
+          <span class="numero-servico">03</span>
+        </div>
+        <div class="col-lg-5">
+          <img src="img/servico3.jpg" class="img-fluid shadow-sm" alt="UTI do Gramado e Tratamento de Raiz">
+        </div>
+        <div class="col-lg-5">
+          <h4 class="text-verde-escuro">UTI do Gramado e Tratamento de Raiz</h4>
+          <p class="text-muted">Descompactação do solo, correção de pH e adubação para recuperar a densidade e o verde do gramado.</p>
+          <p class="fs-4 fw-bold text-verde-escuro">R$ 600,00</p>
+          <a href="servico3.html" class="btn btn-primary">Solicitar Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="empresa" class="bg-tint py-5">
+    <div class="container">
+      <h2 class="text-center text-verde-escuro fw-bold mb-2">Oficina do Jardim</h2>
+      <p class="text-center fst-italic text-muted mb-5">"Aqui sua grama é tratada melhor do que você."</p>
+
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6">
+          <h4 class="text-verde-escuro">Nossa história</h4>
+          <p>A <strong>Oficina do Jardim</strong> nasceu do desespero de Cláudio quando ele tentou podar o gramado da sogra com uma tesoura de costura e acabou descobrindo um talento acidental para a coisa. Percebendo que o trabalho renderia mais com uma ajuda extra no braço, ele chamou Tonho, seu vizinho meio sem rumo, para formar a única e inseparável dupla de funcionários da sua nova empresa de paisagismo.</p>
+          <p>Sem espaço para modéstia e querendo deixar claro o nível de dedicação, Cláudio estampou na lateral da perua o slogan definitivo: <strong>"Aqui sua grama é tratada melhor do que você"</strong>. A promessa virou febre no bairro, conquistando clientes que adoram ver Cláudio e Tonho garantindo à vegetação adubo de primeira, rega no horário exato e um carinho que os próprios donos não veem há tempos.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionEmpresa">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colMissao">Missão</button>
+              </h2>
+              <div id="colMissao" class="accordion-collapse collapse show" data-bs-parent="#accordionEmpresa">
+                <div class="accordion-body">Transformar quintais e jardins em espaços impecáveis através de um cuidado vegetal rigoroso e obsessivo, entregando às plantas a dedicação, o carinho e o tratamento de elite que os próprios donos muitas vezes esquecem de se dar.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colVisao">Visão</button>
+              </h2>
+              <div id="colVisao" class="accordion-collapse collapse" data-bs-parent="#accordionEmpresa">
+                <div class="accordion-body">Ser a empresa de paisagismo de referência local, reconhecida por provar que, com um toque de humor, honestidade e muita dedicação prática, é possível ter a grama mais verde, saudável e bem-tratada da vizinhança.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colValores">Valores</button>
+              </h2>
+              <div id="colValores" class="accordion-collapse collapse" data-bs-parent="#accordionEmpresa">
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li><strong>Prioridade Vegetal:</strong> a planta vem em primeiro lugar.</li>
+                    <li><strong>Fanatismo por Folhas:</strong> todo canteiro recebe o cafuné que precisar.</li>
+                    <li><strong>Hierarquia do Gramado:</strong> a saúde da raiz sempre vem antes do almoço do fundador.</li>
+                    <li><strong>Lealdade ao Verde:</strong> a grama do cliente jamais passará sede no nosso turno.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="text-verde-escuro text-center mb-4">Quem cuida do seu jardim</h4>
+      <div class="row g-4 justify-content-center mb-5">
+        <div class="col-md-5">
+          <div class="card card-equipe h-100">
+            <div class="row g-0 h-100">
+              <div class="col-5 d-flex align-items-center">
+                <img src="img/equipe-claudio.jpg" class="foto-equipe-completa" alt="Cláudio, CEO e Mestre Tesourista">
+              </div>
+              <div class="col-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-0">Cláudio</h5>
+                  <p class="text-verde-escuro fw-semibold small">CEO & Mestre Tesourista</p>
+                  <p class="card-text small">Maneja a tesoura de poda com a delicadeza de um cirurgião. Certificado CMAF e TCPOAP em poda ornamental de alta precisão.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card card-equipe h-100">
+            <div class="row g-0 h-100">
+              <div class="col-5 d-flex align-items-center">
+                <img src="img/equipe-tonho.jpg" class="foto-equipe-completa" alt="Tonho, auxiliar de Cláudio">
+              </div>
+              <div class="col-7">
+                <div class="card-body">
+                  <h5 class="card-title mb-0">Tonho</h5>
+                  <p class="text-verde-escuro fw-semibold small">Auxiliar de Cláudio</p>
+                  <p class="card-text small">Sabe dar o estalo da tesoura no ponto exato do galho. Certificado CDMJF em design e manutenção de jardins formais.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <h4 class="text-verde-escuro">Onde estamos</h4>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill text-verde-escuro"></i> Praça da Matriz, 52</p>
+          <p class="mb-1">Bofete, SP — CEP 18590-000</p>
+          <p class="mb-1"><i class="bi bi-envelope-fill text-verde-escuro"></i> queroserunoesc@unoesc.edu.br</p>
+          <p class="mb-0"><i class="bi bi-telephone-fill text-verde-escuro"></i> (49) 98842-5298</p>
+        </div>
+        <div class="col-md-7">
+          <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+            <iframe src="https://www.google.com/maps?q=Pra%C3%A7a+da+Matriz%2C+52+-+Bofete%2C+SP%2C+18590-000&output=embed" style="border:0;" loading="lazy" title="Localização Oficina do Jardim" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-verde-escuro fw-bold mb-5">O que dizem nossos clientes</h2>
+
+      <div id="carrosselDepoimentos" class="carousel slide carrossel-depoimentos" data-bs-ride="carousel">
+        <div id="lista-depoimentos" class="carousel-inner text-center">
+
+          <div class="carousel-item active">
+            <img src="https://ui-avatars.com/api/?name=Carlos+Eduardo+Rocha&background=1B5E20&color=fff&size=128" class="rounded-circle avatar-depoimento-grande mb-3" alt="Carlos Eduardo Rocha">
+            <p class="fs-5 fst-italic">"O Tonho passou com a enxada no canteiro e não encostou em uma flor sequer. Minha grama nunca esteve tão verde. Certeza que ela é mais bem tratada do que eu!"</p>
+            <h6 class="text-verde-escuro mb-0">Carlos Eduardo Rocha</h6>
+            <small class="text-muted">14/05/2026</small>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://ui-avatars.com/api/?name=Mariana+Souza&background=1B5E20&color=fff&size=128" class="rounded-circle avatar-depoimento-grande mb-3" alt="Mariana Souza">
+            <p class="fs-5 fst-italic">"Salvaram o paisagismo da pousada. Em dois dias, a poda ficou impecável e a adubação fez o gramado renascer. Serviço rápido e com um ótimo humor."</p>
+            <h6 class="text-verde-escuro mb-0">Mariana Souza</h6>
+            <small class="text-muted">22/07/2026</small>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://ui-avatars.com/api/?name=Roberto+Mendes&background=1B5E20&color=fff&size=128" class="rounded-circle avatar-depoimento-grande mb-3" alt="Roberto Mendes">
+            <p class="fs-5 fst-italic">"Ninguém resolvia o mato alto do meu terreno. Eles chegaram com a roçadeira e a enxada e deixaram tudo limpo e nivelado em poucas horas. Serviço bruto e profissional."</p>
+            <h6 class="text-verde-escuro mb-0">Roberto Mendes</h6>
+            <small class="text-muted">10/08/2026</small>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://ui-avatars.com/api/?name=Fernanda+Lima&background=1B5E20&color=fff&size=128" class="rounded-circle avatar-depoimento-grande mb-3" alt="Fernanda Lima">
+            <p class="fs-5 fst-italic">"Pedi pra dar uma aparada nas cercas vivas e recebi de volta uma escultura. O Cláudio trata tesoura de poda como pincel. Virei cliente fiel."</p>
+            <h6 class="text-verde-escuro mb-0">Fernanda Lima</h6>
+            <small class="text-muted">01/09/2026</small>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://ui-avatars.com/api/?name=Eduardo+Prado&background=1B5E20&color=fff&size=128" class="rounded-circle avatar-depoimento-grande mb-3" alt="Eduardo Prado">
+            <p class="fs-5 fst-italic">"Meu gramado estava amarelado havia meses. Depois da 'UTI do Gramado' voltou a ficar verde em duas semanas. Recomendo de olhos fechados."</p>
+            <h6 class="text-verde-escuro mb-0">Eduardo Prado</h6>
+            <small class="text-muted">15/08/2026</small>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="bg-verde-escuro-2 py-5">
+    <div class="container">
+      <h2 class="text-center text-white fw-bold mb-5">Fale Conosco</h2>
+      <div class="card card-contato shadow-lg">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <div class="ratio ratio-1x1 h-100">
+              <iframe src="https://www.google.com/maps?q=Pra%C3%A7a+da+Matriz%2C+52+-+Bofete%2C+SP%2C+18590-000&output=embed" style="border:0;" loading="lazy" title="Localização Oficina do Jardim" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card-body p-4">
+              <form id="form-orcamento">
+                <div class="mb-3">
+                  <label class="form-label">Nome</label>
+                  <input type="text" name="nome_cliente" class="form-control" placeholder="Seu nome completo" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">E-mail</label>
+                  <input type="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Mensagem</label>
+                  <textarea name="mensagem" class="form-control" rows="3" placeholder="Como podemos ajudar no seu jardim?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-3">Enviar</button>
+                <div id="feedback-orcamento" class="small fw-semibold"></div>
+              </form>
+              <hr>
+              <p class="small mb-1"><i class="bi bi-envelope-fill text-verde-escuro"></i> queroserunoesc@unoesc.edu.br</p>
+              <p class="small mb-1"><i class="bi bi-telephone-fill text-verde-escuro"></i> (49) 98842-5298</p>
+              <a href="https://wa.me/5549988425298?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento" target="_blank" class="btn btn-success btn-sm mt-2">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+              <div class="mt-3">
+                <a href="#" class="me-3 fs-4 text-verde-escuro"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="fs-4 text-verde-escuro"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-verde-escuro text-white pt-4 pb-3">
+    <div class="container text-center">
+      <img src="img/logo.png" alt="Oficina do Jardim" style="height:50px;" class="mb-2">
+      <p class="small mb-2">Aqui sua grama é tratada melhor do que você.</p>
+      <hr class="border-light opacity-25">
+      <p class="small mb-0">Desenvolvido por <strong>Lucas Riva</strong> — Projeto acadêmico Unoesc, FDW 2026/2</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5549988425298?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento" target="_blank" class="whatsapp-flutuante" title="Fale no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
